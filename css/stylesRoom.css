@@ -1,0 +1,1073 @@
+:root {
+  --buttonColor: #fda94f;
+  --buttonHover: #fec281;
+  --buttonActive: #f58815;
+  --ButtonFocus: #fec281;
+  --container: #ff8c00;
+  --font: #4d4d4d;
+}
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fafafa;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+h1 {
+  font-size: 2.441rem;
+  color: var(--font);
+}
+h2 {
+  font-size: 1.953rem;
+  color: var(--font);
+}
+h3 {
+  font-size: 1.563rem;
+  color: var(--font);
+}
+h4 {
+  font-size: 1.25rem;
+  color: var(--font);
+}
+
+span {
+  color: var(--font);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--font);
+}
+
+a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+label,
+input {
+  color: var(--font);
+}
+
+hr {
+  background: var(--buttonColor);
+  height: 20px;
+  border: none;
+}
+
+/* Utility Classes */
+.container {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.containerCC {
+  color: #050505;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px; /* Mayor padding en los lados */
+}
+
+.section {
+  color: #050505;
+  text-align: left;
+  flex: 1; /* Hace que cada sección ocupe el mismo espacio */
+  padding: 0 10px; /* Añade padding para separación entre secciones */
+}
+
+.section h3 {
+  color: #050505;
+  margin-bottom: 10px;
+}
+
+.section p {
+  color: #050505;
+  margin-bottom: 5px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-light {
+  background: var(--buttonColor);
+}
+
+.btn-dark {
+  background: #4d4d4d;
+}
+
+.btn-light:hover {
+  background: var(--buttonHover);
+}
+
+.btn-dark:hover {
+  background: #737373;
+}
+
+.py-80 {
+  padding: 80px 0;
+}
+.py-50 {
+  padding: 50px 0;
+}
+.py-30 {
+  padding: 30px 0;
+}
+
+.box {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+  padding: 50px;
+  height: 250px;
+}
+
+.box h4 {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.clr {
+  clear: both;
+}
+
+/* Navbar */
+#navbar .logo {
+  font-size: 2.3rem;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+#navbar h1 a {
+  color: var(--buttonColor);
+}
+
+#navbar ul {
+  float: right;
+  list-style: none;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a.current,
+#navbar ul li a:hover {
+  color: var(--buttonColor);
+}
+
+#showcaseC::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Capa oscura con transparencia */
+  z-index: 1;
+}
+
+#showcaseC h1 {
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff; /* Cambia el color del texto a blanco para mayor contraste */
+  font-size: 3rem; /* Aumenta el tamaño de la fuente */
+  letter-spacing: 2px; /* Añade espacio entre las letras para un look más elegante */
+}
+
+/* ShowcaseC */
+#showcaseC {
+  background: url("../img/showcaseD.jpg"); /* Cambia la imagen de fondo */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 190px 60px;
+  height: 600px;
+  text-align: center;
+  position: relative;
+}
+
+/* Showcase para el index */
+#showcaseD {
+  background: url("../img/showcaseD.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 190px 60px;
+  height: 600px;
+  text-align: center;
+  position: relative;
+}
+
+#showcaseD::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#showcaseD h1 {
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+/* Sección de reservación */
+#reservation h2 {
+  color: var(--font);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#reservation .btn {
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+
+/* Sección de características */
+.features-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.features-grid .box {
+  flex: 1;
+  text-align: left;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.features-grid .box h4 {
+  margin-bottom: 15px;
+  color: #fafafa;
+}
+
+.features-grid .box p {
+  font-size: 1rem;
+  color: #fafafa;
+}
+
+#features .features-1 {
+  background: url("../img/feature-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#features .features-2 {
+  background: url("../img/feature-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#features .features-3 {
+  background: url("../img/feature-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fafafa;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer .container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-section h3 {
+  color: var(--buttonColor);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f3f3f3;
+}
+
+.footer-section .icon {
+  margin-right: 10px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #fafafa;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--buttonHover);
+}
+
+.footer-bottom p {
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.room-cards,
+.event-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.room-card,
+.event-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 30%;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.room-card img,
+.event-card img {
+  width: 100%;
+  height: auto;
+}
+
+.room-card h3,
+.event-card h3 {
+  margin: 10px 0;
+}
+
+/* Login and Register Section */
+#login,
+#register {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+/* Estilo general del botón */
+.button {
+  background-color: var(
+    --buttonColor
+  ); /* Color de fondo (puedes ajustar según tu paleta de colores) */
+  color: #ffffff; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 15px 30px; /* Espaciado interno */
+  margin-top: 12px;
+  font-size: 18px; /* Tamaño de la fuente */
+  font-weight: 500; /* Peso de la fuente */
+  cursor: pointer; /* Cambia el cursor a una mano */
+  transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves para cambios */
+  outline: none; /* Sin borde de enfoque */
+}
+
+/* Estilo del botón al pasar el ratón */
+.button:hover {
+  background-color: var(
+    --buttonHover
+  ); /* Color de fondo más oscuro al pasar el ratón */
+  transform: scale(1.05); /* Ligera animación de escala */
+}
+
+/* Estilo del botón cuando está presionado */
+.button:active {
+  background-color: var(
+    --buttonActive
+  ); /* Color de fondo aún más oscuro cuando se presiona */
+  transform: scale(0.98); /* Efecto de reducción al presionar */
+}
+
+/* Estilo del botón al recibir el foco (opcional) */
+.button:focus {
+  outline: 2px solid var(--buttonActive); /* Borde de enfoque visible */
+  outline-offset: 2px; /* Espaciado del borde de enfoque */
+}
+
+.room-info {
+  padding: 2rem;
+  text-align: center;
+}
+
+.room-info h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: var(--font);
+}
+
+.room-info p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: var(--font);
+}
+
+.btnReservar:hover {
+  background-color: var(--buttonHover);
+}
+
+/* Efecto de hover en la tarjeta */
+.room-card:hover {
+  transform: translateY(-5px);
+}
+
+.btnReservar {
+  display: inline-block;
+  font-size: 18px;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.8rem;
+}
+
+.light {
+  background: var(--buttonColor);
+  color: #ffffff;
+}
+
+.dark {
+  background: var(--text-color);
+  color: #fff;
+}
+
+.btnReservar {
+  background-color: var(--buttonColor); /* Color del botón */
+  color: #fff; /* Color del texto */
+  padding: 10px 20px; /* Relleno interno del botón */
+  border-radius: 5px; /* Bordes redondeados */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Mostrar como bloque en línea */
+  font-size: 16px; /* Tamaño de la fuente */
+}
+
+.btnReservar i {
+  margin-right: 1rem; /* Espacio entre el ícono y el texto */
+}
+
+.list h1 {
+  margin-top: 1rem;
+  text-transform: unset;
+}
+
+.details-link {
+  color: var(--font);
+  text-decoration: underline;
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  padding: 3rem;
+}
+
+.rooms-grid .room-card {
+  width: 105%; /* Asegura que la tarjeta ocupe toda la columna */
+  max-width: none; /* Permite que la tarjeta se expanda */
+}
+
+.room-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.room-list li {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.room-details {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.room-details img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.room-details .info {
+  flex: 1;
+  padding-bottom: 50px;
+}
+
+.room-details h3 {
+  margin: 0 0 10px;
+}
+
+.room-details p {
+  margin: 5px 0;
+}
+
+.room-details .icon {
+  margin-right: 10px;
+}
+
+.room-details .price {
+  text-align: right;
+}
+
+.price {
+  margin-right: 15px;
+}
+
+.diminuto {
+  font-size: 15px;
+}
+
+.aumentar {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.room-details .button-container {
+  text-align: right;
+}
+
+.button-container {
+  margin-top: 30px;
+}
+
+.room-details .button-container a {
+  text-decoration: none;
+  color: white;
+  background-color: var(--buttonColor);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.room-details i {
+  margin-right: 5px;
+}
+
+.room-list button {
+  background-color: var(--buttonColor);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.room-list button:hover {
+  background-color: var(--buttonHover);
+}
+
+/* Tab Control */
+
+.tabcontrol {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #ddd;
+}
+
+.tab {
+  margin-right: 20px;
+  padding-bottom: 10px;
+}
+
+.tab a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.tab.active a {
+  color: var(--buttonColor);
+  border-bottom: 2px solid var(--buttonColor);
+}
+
+.tab-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.tabcontrol input[type="text"],
+.tabcontrol input[type="tel"],
+.tabcontrol input[type="email"],
+.tabcontrol input[type="date"] {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tabcontrolRooms input[type="date"] {
+  padding: 12px 60px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tabcontrol button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--buttonColor);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tabcontrolRooms button {
+  padding: 15px 60px;
+  margin-left: 155px;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--buttonColor);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tabcontrol button:hover {
+  background-color: var(--buttonHover);
+}
+
+/* Loader o spinner */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* Oculto por defecto */
+  z-index: 9999;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Detalles de renta */
+.invoice-container {
+  max-width: 600px;
+  margin: 0 auto 90px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.invoice-item {
+  margin-bottom: 10px;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.invoice-item:last-child {
+  border-bottom: none;
+}
+.invoice-label {
+  font-weight: bold;
+}
+.invoice-value {
+  float: right;
+}
+.total {
+  font-size: 18px;
+  color: var(--font);
+  font-weight: bold;
+  text-align: right;
+  margin-top: 20px;
+}
+
+/* Campos fechas */
+.date-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.date-field {
+  flex: 1;
+}
+
+.date-field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.date-field input {
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.invoice-item i {
+  margin-right: 8px; /* Cambia el color según prefieras */
+}
+
+.total i {
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.spinner {
+  border: 8px solid #f3f3f3; /* Color del fondo */
+  border-top: 8px solid var(--buttonColor); /* Color del spinner */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Para asegurarse que esté por encima de otros elementos */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.no-rooms {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Estilos para centrar y ajustar la imagen SVG */
+.no-rooms {
+  text-align: center; /* Centra el contenido dentro del contenedor */
+}
+
+.no-rooms img {
+  max-width: 200px; /* Ajusta el tamaño máximo de la imagen */
+  max-height: 200px; /* Ajusta la altura máxima de la imagen */
+  width: auto; /* Mantiene la proporción de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Elimina cualquier espacio debajo de la imagen */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  padding-bottom: 15px;
+}
+/* Estilos para los campos de entrada de tipo número */
+input[type="number"] {
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 10px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  width: 100%; /* Ancho completo */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+  transition: border-color 0.3s ease; /* Transición suave para el cambio de color de borde */
+}
+
+input[type="number"]:focus {
+  border-color: #007bff; /* Color del borde en foco */
+  outline: none; /* Elimina el contorno predeterminado */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra sutil para el enfoque */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Elimina los botones de incremento y decremento en Chrome/Safari */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Elimina los botones de incremento y decremento en Firefox */
+}
+
+#restaurant {
+  background-color: #fff;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.restaurant-info p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: var(--font);
+}
+
+.restaurant-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.restaurant-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.restaurant-item h3 {
+  margin: 20px 0 10px;
+  color: var(--font);
+}
+
+.restaurant-item p {
+  font-size: 1rem;
+  color: var(--font);
+}
+
+/* About section */
+/* About section */
+#about {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+}
+
+.about-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Mission and Vision */
+#mission-vision {
+  background-color: #fff;
+  padding: 50px 20px;
+}
+
+.mission-vision-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.mission,
+.vision {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  text-align: center;
+}
+
+.mission h3,
+.vision h3 {
+  color: var(--buttonColor);
+  margin-bottom: 15px;
+}
+
+/* Services section */
+#services {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+#services h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.service h3 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: var(--font);
+}
+
+.service p {
+  font-size: 1rem;
+  color: var(--font);
+  margin-top: 10px;
+}
+
+/* Testimonials */
+#testimonials {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.testimonials-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.testimonial {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.testimonial p {
+  font-size: 1rem;
+  color: var(--font);
+  margin-bottom: 10px;
+}
+
+.testimonial h4 {
+  font-size: 1.2rem;
+  color: var(--font);
+}

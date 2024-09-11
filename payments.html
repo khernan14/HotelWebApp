@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/stylesRoom.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css"> -->
+    <title>Reservaciones | Hotel IS-2</title>
+
+<body>
+    <header>
+        <nav id="navbar" class="py-30">
+            <div class="container">
+                <h1 class="logo"><a href="index.html">Hotel IS-2 </a></h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <!--<li><a href="contact.html">Contacto</a></li>-->
+                    <li><a href="Habitaciones.html" class="current">Habitaciones</a></li>
+                    <li><a href="Eventos.html">Eventos</a></li>
+                    <li><a href="Restaurante.html">Restaurante</a></li>
+                    <li><a href="about.html">Nosotros</a></li>
+                </ul>
+            </div>
+            <div id="showcaseC" class="py-80">
+                <div class="container">
+                    <h1>Habitaciones</h1>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container py-50">
+            <div class="tabcontrol">
+                <ul class="tabs">
+                    <li class="tab active"><a href="#datos-cliente">Datos del cliente</a></li>
+                    <li class="tab"><a href="#detalle-pago">Detalles de la Habitación</a></li>
+                    <li class="tab"><a href="#metodo-pago">Método de pago</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="datos-cliente" class="tab-pane active">
+                        <h2>Datos del cliente</h2>
+                        <form id="form-datos-cliente">
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre"><br><br>
+                            <label for="telefono">Número de teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono"><br><br>
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="email" id="correo" name="correo"><br><br>
+                            <!-- <div class="date-container">
+                                <div class="date-field">
+                                    <label for="checkin">Check-In:</label>
+                                    <input type="date" id="checkin" name="checkin">
+                                </div>
+                                <div class="date-field">
+                                    <label for="checkout">Check-Out:</label>
+                                    <input type="date" id="checkout" name="checkout">
+                                </div>
+                            </div> -->
+                            <!-- <a onload="insertCustomer()" type="submit" id="guardar-datos" class="button">Guardar</a> -->
+                            <button type="button" id="guardar-datos" class="button"
+                                onclick="waitForDOM()">Siguiente</button>
+                            <!-- <button type=" submit" id="guardar-datos" class="btn btn-light">Guardar</button> -->
+                        </form>
+                    </div>
+                    <div id="detalle-pago" class="tab-pane">
+                        <div class="invoice-container">
+                            <h2>Detalles de la Reserva</h2>
+                            <div class="invoice-item">
+                                <span class="invoice-label">
+                                    <i class="fas fa-door-closed"></i> Número de Habitación:
+                                </span>
+                                <span class="invoice-value" id="room-number"></span>
+                            </div>
+                            <div class="invoice-item">
+                                <span class="invoice-label">
+                                    <i class="fas fa-dollar-sign"></i> Precio por Noche:
+                                </span>
+                                <span class="invoice-value" id="price-per-night"></span>
+                            </div>
+                            <div class="invoice-item">
+                                <span class="invoice-label">
+                                    <i class="fas fa-calendar-check"></i> Fecha de Check-In:
+                                </span>
+                                <span class="invoice-value" id="checkin-display"></span>
+                            </div>
+                            <div class="invoice-item">
+                                <span class="invoice-label">
+                                    <i class="fas fa-calendar-times"></i> Fecha de Check-Out:
+                                </span>
+                                <span class="invoice-value" id="checkout-display"></span>
+                            </div>
+                            <div class="invoice-item">
+                                <span class="invoice-label">
+                                    <i class="fas fa-bed"></i> Tipo de Habitación:
+                                </span>
+                                <span class="invoice-value" id="room-type"></span>
+                            </div>
+                            <div class="total">
+                                <i class="fas fa-receipt"></i> Total a Pagar: <span id="total"></span>
+                            </div>
+                        </div>
+                        <button id="siguiente-detalle" class="btn btn-light">Siguiente</button>
+                    </div>
+
+                    <div id="metodo-pago" class="tab-pane">
+                        <h2>Método de pago</h2>
+                        <form method="post" id="form-metodo-pago">
+                            <label for="tarjeta">Número de tarjeta:</label>
+                            <input type="text" id="tarjeta" name="tarjeta"><br><br>
+                            <label for="fecha-vencimiento">Fecha de vencimiento:</label>
+                            <input type="date" id="fecha-vencimiento" name="fecha-vencimiento"><br><br>
+                            <label for="cvv">CVV:</label>
+                            <input type="text" id="cvv" name="cvv"><br><br>
+                            <div id="spinner" class="spinner hidden"></div>
+                            <button type="submit" id="pagar" class="btn btn-light"
+                                onclick="insertBookings()">Pagar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <hr>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h3>Sobre Nosotros</h3>
+                    <p>Hotel IS-2 se dedica a brindar una experiencia inolvidable, combinando lujo, confort, y el mejor
+                        servicio
+                        al cliente.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><span class="icon">📍</span>Bulevar Suyapa, Tegucigalpa, Honduras</p>
+                    <p><span class="icon">📞</span>(504) 2232-6920</p>
+                    <p><span class="icon">✉️</span>sugerencias@hotelalameda.hn</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hotel IS-2. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/scripts/effects.js"></script>
+    <script src="/scripts/payments.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,656 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.441rem;
+}
+h2 {
+  font-size: 1.953rem;
+}
+h3 {
+  font-size: 1.563rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+hr {
+  background: #fda94f;
+  height: 20px;
+  border: none;
+}
+
+/* Utility Classes */
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-light {
+  background: #fda94f;
+}
+
+.btn-dark {
+  background: #4d4d4d;
+}
+
+.btn-light:hover {
+  background: #fec281;
+}
+
+.btn-dark:hover {
+  background: #737373;
+}
+
+.py-80 {
+  padding: 80px 0;
+}
+.py-50 {
+  padding: 50px 0;
+}
+.py-30 {
+  padding: 30px 0;
+}
+
+.box {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+  padding: 50px;
+  height: 250px;
+}
+
+.box h4 {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.clr {
+  clear: both;
+}
+
+/* Navbar */
+#navbar .logo {
+  font-size: 2.3rem;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+#navbar h1 a {
+  color: #fda94f;
+}
+
+#navbar ul {
+  float: right;
+  list-style: none;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a.current,
+#navbar ul li a:hover {
+  color: #fda94f;
+}
+
+/* Showcase */
+#showcase {
+  background: url("../img/showcase.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 190px 60px;
+  height: 600px;
+  text-align: center;
+}
+
+#showcase h1,
+#showcase p {
+  padding-bottom: 20px;
+}
+
+#showcase h1 {
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+/* ShowcaseC */
+#showcaseC {
+  background: url("../img/showcaseC.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 190px 60px;
+  height: 600px;
+  text-align: center;
+}
+
+#showcaseC h1,
+#showcaseC p {
+  padding-bottom: 20px;
+}
+
+#showcaseC h1 {
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+/* ShowcaseD */
+#showcaseD {
+  background: url("../img/showcaseD.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 190px 60px;
+  height: 600px;
+  text-align: center;
+}
+
+#showcaseD h1,
+#showcaseD p {
+  padding-bottom: 20px;
+}
+
+#showcaseD h1 {
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+/* Reservation */
+#reservation {
+  margin-bottom: 20px;
+}
+
+#reservation h2 {
+  float: left;
+  margin-left: 200px;
+  margin-top: 10px;
+  font-weight: lighter;
+  color: #4d4d4d;
+}
+
+#reservation a {
+  float: right;
+  margin-right: 120px;
+}
+
+/* Features */
+#features .features-1 {
+  background: url("../img/feature-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#features .features-2 {
+  background: url("../img/feature-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#features .features-3 {
+  background: url("../img/feature-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* About */
+#about {
+  background: #fda94f;
+}
+
+#about .about-content {
+  float: left;
+  width: 50%;
+  padding-right: 20px;
+}
+
+#about .about-content h1 {
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+#about .about-img {
+  float: right;
+  width: 50%;
+}
+
+#about .about-img img {
+  width: 100%;
+}
+
+/* Testimonials */
+#testimonial {
+  background: url("../img/testimonials.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  height: 450px;
+}
+
+#testimonial h2 {
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+.testimonial-content {
+  background: rgb(77, 77, 77, 0.8);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.testimonial-content img {
+  float: left;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Contact */
+#contact {
+  color: #4d4d4d;
+}
+
+#contact h1 {
+  padding-bottom: 40px;
+  font-weight: lighter;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Features Contact */
+#features-contact .location {
+  background: url("../img/contact-feature-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#features-contact .phone {
+  background: url("../img/contact-feature-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#features-contact .email {
+  background: url("../img/contact-feature-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Footer */
+#mainfooter {
+  text-align: center;
+  color: #4d4d4d;
+}
+
+/*Formulario HABITACIONES*/
+/* Contenedor principal */
+.containerC {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 10%; /* Aumenta el margen izquierdo */
+  margin-right: 10%; /* Aumenta el margen derecho */
+}
+
+/* Formulario - 30% del ancho */
+.form-container {
+  width: 30%;
+  background-color: #fafafa;
+  padding: 50px;
+  border-radius: 10px;
+  box-sizing: border-box; /* Asegura que el padding se incluye en el 30% del ancho */
+}
+
+/* Estilo para el título del formulario */
+.form-container h2 {
+  text-align: center;
+  color: #050505;
+  margin-bottom: 20px;
+}
+
+/* Estilo para las etiquetas */
+.form-container label {
+  display: block;
+  color: #020202;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Estilo para los inputs del formulario */
+.form-container input[type="text"],
+.form-container input[type="tel"],
+.form-container input[type="email"],
+.form-container input[type="date"] {
+  width: 110%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #030303;
+  border-radius: 5px;
+}
+
+/* Estilo para el botón de envío */
+.form-container input[type="submit"] {
+  width: 30%; /* Cambia el ancho del botón a 100% para que ocupe todo el espacio del contenedor */
+  padding: 10px;
+  background-color: #ff8c00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Hover para el botón de envío */
+.form-container input[type="submit"]:hover {
+  background-color: #e67e00;
+}
+
+/* Detalles de la habitación - 70% del ancho */
+.details-container {
+  width: 70%;
+  box-sizing: border-box; /* Asegura que el padding se incluye en el 70% del ancho */
+  padding-left: 20px;
+}
+
+/* Estilo para el título de los detalles */
+.details-container h2 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+  color: #050505;
+}
+
+/* Estilo para la lista de detalles */
+.details-container ul {
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  color: #050505;
+  padding: 0;
+}
+
+/* Estilo para los elementos de la lista */
+.details-container li {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo para el ícono de check antes de cada elemento de la lista */
+.details-container li::before {
+  content: "✔";
+  color: #4caf50;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+/* Estilo para el texto de los detalles */
+.details-container p {
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  color: #050505;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Estilo Abajo */
+.containerCC {
+  color: #050505;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px; /* Mayor padding en los lados */
+}
+
+.section {
+  color: #050505;
+  text-align: left;
+  flex: 1; /* Hace que cada sección ocupe el mismo espacio */
+  padding: 0 10px; /* Añade padding para separación entre secciones */
+}
+
+.section h3 {
+  color: #050505;
+  margin-bottom: 10px;
+}
+
+.section p {
+  color: #050505;
+  margin-bottom: 5px;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.footer {
+  color: #050505;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer a {
+  color: #ffc107;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+/*Formulario RESERVACION*/
+/* Contenedor principal */
+.containerCC {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 5%; /* Aumenta el margen izquierdo */
+  margin-right: 5%; /* Aumenta el margen derecho */
+}
+
+/* Formulario - 30% del ancho */
+.form-containerC {
+  width: 50%;
+  background-color: #fafafa;
+  padding: 50px;
+  border-radius: 10px;
+  box-sizing: border-box; /* Asegura que el padding se incluye en el 30% del ancho */
+}
+
+/* Estilo para el título del formulario */
+.form-containerC h2 {
+  text-align: center;
+  color: #050505;
+  margin-bottom: 20px;
+}
+
+/* Estilo para las etiquetas */
+.form-containerC label {
+  display: block;
+  color: #020202;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Estilo para los inputs del formulario */
+.form-containerC input[type="text"],
+.form-containerC input[type="tel"],
+.form-containerC input[type="email"],
+.form-containerC input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #030303;
+  border-radius: 5px;
+}
+
+/* Estilo para el botón de envío */
+.form-containerC input[type="submit"] {
+  width: 30%; /* Cambia el ancho del botón a 100% para que ocupe todo el espacio del contenedor */
+  padding: 10px;
+  background-color: #ff8c00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Hover para el botón de envío */
+.form-containerC input[type="submit"]:hover {
+  background-color: #e67e00;
+}
+
+/* Detalles de la habitación - 70% del ancho */
+.details-containerC {
+  width: 70%;
+  box-sizing: border-box; /* Asegura que el padding se incluye en el 70% del ancho */
+  padding-left: 20px;
+}
+
+/* Estilo para el título de los detalles */
+.details-containerC h2 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+  color: #050505;
+}
+
+/* Estilo para la lista de detalles */
+.details-containerC ul {
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  color: #050505;
+  padding: 0;
+}
+
+/* Estilo para los elementos de la lista */
+.details-containerC li {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo para el ícono de check antes de cada elemento de la lista */
+.details-containerC li::before {
+  content: "✔";
+  color: #4caf50;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+/* Estilo para el texto de los detalles */
+.details-containerC p {
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  color: #050505;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/*Formulario NARANJA - RESERVACIONES*/
+.contact-box {
+  background-color: #d97333; /* color anaranjado */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.contact-box h2 {
+  margin-top: 0;
+}
+
+.contact-box p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact-box a {
+  color: #ffc107;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.contact-box .icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.social-icons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-icons a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
